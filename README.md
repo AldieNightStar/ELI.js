@@ -6,6 +6,9 @@
 
 ## Usage
 ```js
+// Select an element (Query selector)
+Eli.sel("#app");
+
 // Create new elements
 Eli.make('div', div => { ... });
 Eli.span('text', span => { ... });
@@ -60,7 +63,7 @@ class Ask {
 }
 
 // Usage
-let ask = new Ask("Do you like icecream?",
+let ask = new Ask("Do you like ice cream?",
 	() => window.alert("Great!"),
 	() => window.alert("Oh well!")
 );
